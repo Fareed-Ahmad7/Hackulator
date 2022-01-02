@@ -1,55 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8"/>
-        <meta content="follow,index" name="robots"/>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-        <title>Google Login Template | Login Page CSS</title>
-
-     
-        <meta content="login page css, login template, login css, login form template" name="keywords"/>
-        <link href="https://mazipan.github.io/login-page-css/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
-        <link href="https://mazipan.github.io/login-page-css/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
-        <link href="https://mazipan.github.io/login-page-css/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
-        <link href="https://mazipan.github.io/login-page-css/manifest.json" rel="manifest"/>
-        <meta content="#5f6368" name="msapplication-TileColor"/><meta content="#5f6368" name="theme-color"/>
-        <link href="https://mazipan.github.io/login-page-css/manifest.json" rel="manifest"/>
-        <link href="https://mazipan.github.io/login-page-css/index.cdd05366.css" rel="stylesheet"/>
-        <link href="https://mazipan.github.io/login-page-css/index.6a037238.css" rel="stylesheet"/>
-        <link href="https://mazipan.github.io/login-page-css/03-google/index.8be20402.css" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-25065548-2"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","UA-25065548-2");</script>
-    </head>
-    <body> 
-        <div class="content-body"> 
-            <div class="form-wrapper">
-                <div class="logo"> 
-                    <ion-icon name="person-circle-outline"></ion-icon>
-                </div> 
-         <h1 class="heading text-center">Login</h1> <h3 class="sub-heading text-center">Account Login</h3> <form> <div class="field"> 
-            <input class="input" name="email" type="email"/> 
-            <label class="label" for="email" style="    transform: scale(.8) translateY(-85px);    background-color: #fff; position: absolute;
-            color: #1b73e8;
-            left: 12px;
-            padding: 1px 5px;">Email</label>
-            <input class="input" name="password " style="margin: 5px; position: relative; top: 15px ;left: -5px;" type="password"/> 
-            <label class="label" for="password" style=" transform: scale(.8) translateY(3px);  background-color: #fff; position: absolute;
-            color: #1b73e8;
-            left: 12px;
-            padding: 1px 5px;">password</label>
-         </div>
-        <div class="forgot-button"> <a href="#">Forgot email?</a> </div> <div class="description-text"> <p> Dont have account , Create new now.
-        <a href="#">Register </a> </p> </div> <div class="form-action"> <a class="btn secondary" href="#">Sign up</a> <button class="btn primary" type="submit">Login</button> </div> </form> </div> </div> <footer> <a href="/login-page-css/"> Back to Home </a> <span class="author"> Made by team Hackulator <a href="https://github.com/josprima" rel="noopener noreferrer" target="_blank">@kamal</a>, © 2022 </span> 
-        </footer>
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-     </body>
-     <style>
-        ion-icon {
-            font-size: 80px;
-            text-align: center;
-            position: relative;
-            left: 150px;
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <meta name="description" content="Login - Register Template">
+    <meta name="author" content="kamal nayan INDIA">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        body {
+            background-color:bisque;
         }
-     </style>
+    </style>
+</head>
 
-    </html>
+<body>
+    <div id="container-login">
+        <div id="title">
+            <i class="material-icons lock">lock</i> Login
+        </div>
+
+        <form>
+            <div class="input">
+                <div class="input-addon">
+                    <i class="material-icons">face</i>
+                </div>
+                <input id="username" placeholder="Username" type="text" required class="validate" autocomplete="off">
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="input">
+                <div class="input-addon">
+                    <i class="material-icons">vpn_key</i>
+                </div>
+                <input id="password" placeholder="Password" type="password" required class="validate" autocomplete="off">
+            </div>
+
+            <div class="remember-me">
+                <input type="checkbox">
+                <span style="color: #DDD">Remember Me</span>
+            </div>
+
+            <input type="submit" value="Log In" />
+        </form>
+
+        <div class="forgot-password">
+            <a href="#">Forgot your password?</a>
+        </div>
+        <div class="privacy">
+            <a href="#">Privacy Policy</a>
+        </div>
+
+        <div class="register">
+            Don't have an account yet?
+            <a href="./register.html"><button id="register-link">Register here</button></a>
+        </div>
+    </div>
+</body>
+
+</html>
